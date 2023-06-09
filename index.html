@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html>
+<!-- Alder French's Personal Website
+Welcome! Thanks for checking out my website. I designed it myself
+using html, CSS, JS/Jquery, and the Bulma Framework. It's based
+off an old website called "geekonabike" that I made for my
+freelance web design business a couple years ago. -->
+  
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="Practical Web Design and Tech Support without the Stress">
+  <meta name="description" content="Friendly web design and tech support.
+  Professional IT services with a focus on communication and education for long
+  term solutions to modern problems. ">
+  <meta name="keywords" content="eugene, oregon, technical support, web design,
+  web design, SEO, search engine optimization, geek on a bike, tech support, ">
+  <meta name="author" content="Alder French">
+  <title>Alder French | Computer Science Graduate Website</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="mycss/index.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<style type="text/css">
+  /* Animate bike animation */
+  .bikeanimation {
+    width: 450px;
+    height: auto;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: mymove 5s;
+    /* Safari 4.0 - 8.0 */
+    animation: mymove 5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+  }
+
+
+
+  /* Standard syntax */
+  @keyframes mymove {
+    from {
+      left: -25%;
+    }
+
+    to {
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  /* Animate "Geekonabike" Fade in */
+  .nameanimation {
+    position: relative;
+    bottom: 100px;
+    text-align: center;
+
+    -webkit-animation: fadein 5s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 5s;
+    /* Internet Explorer */
+    -o-animation: fadein 5s;
+    /* Opera < 12.1 */
+    animation: fadein 5s;
+  }
+
+  @keyframes fadein {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Firefox < 16 */
+  @-moz-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Safari, Chrome and Opera > 12.1 */
+  @-webkit-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Internet Explorer */
+  @-ms-keyframes fadein {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+</style>
+
+<body>
+
+
+  <!-- Home Body -->
+  <section class="hero is-fullheight" id="home-section">
+    <div class="hero-head">
+      <nav class="navbar">
+        <div class="container is-fullhd">
+          <div class="navbar-brand">
+            <span class="navbar-burger burger" data-target="navbarMenuHeroA">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </div>
+          <div class="navbar-menu" id="navbarMenuHeroA">
+            <div class="navbar-start" style="margin-left:5px;">
+              <a href="#home-section" class="navbar-item is-active has-text-link">
+                Home
+              </a>
+              <a href="#about-section" class="navbar-item">
+                About
+              </a>
+              <a href="#skills-section" class="navbar-item">
+                Skills
+              </a>
+              <a href="#projects-section" class="navbar-item">
+                Projects
+              </a>         
+              <a href="#contact-section" class="navbar-item">
+                Contact
+              </a>
+              <a href="./alder-french-resume.pdf" class="navbar-item" download>
+                Resume &nbsp; <i class="fas fa-file-download"></i>
+              </a>
+            </div>
+            <div class="navbar-end">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero-body">
+      <div class="bikeanimation" id="div2">
+        <img src="./img/logo.png" alt="" width="auto" height="200px">
+      </div>
+
+    </div>
+    <div class="hero-foot">
+      <div class="nameanimation">
+        <h1 class="title">
+          Alder French
+        </h1>
+        <h2>
+          University of Oregon, 2023 Computer Science Graduate
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero-eugene is-fullheight" id="about-section">
+    <div class="hero-head">
+      <div class="container">
+        <h2 class="title has-text-centered has-text-white"><br>About</h2>
+      </div>
+    </div>
+    <div class="hero-body">
+      <div class="columns">
+        <div class="column is-half">
+          <div class="container is-fluid has-text-centered">
+            <p class="subtitle has-text-white text-background">I remember being a kid and seeing computers as a sort of sorcery. From school to play, it seemed like the common
+            denominator with all things "modern" was these mysterious machines. Yet no one I knew, from parents to teachers, could
+            explain how they worked. So whenever I thought about how clicking a button can change the pixels on a screen, all I
+            could say to myself was "Might as well be magic...". After years of wondering, I simply couldn't take it anymore. I had
+            to understand the magic. This brings us to today, where I am expected to graduate in June of 2023. I'm pleased to say I
+            am beginning to understand.
+            <br><br>
+            My goal is to eventually obtain a job in the field of artificial intelligence, but at this point in my career, I would
+            be happy with any job that pushes me to keep learning and become a better programmer.</p>
+          </div>
+        </div>
+        <div class="column is-half">
+          <div class="container is-fluid has-text-centered">
+            <figure>
+              <img src="./img/alderProfile.jpeg" style="width: 50%; height: 50%; border: 1mm solid white;" alt="">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-foot">
+
+    </div>
+  </section>
+
+
+
+  <!-- Begin Skills Section -->
+  <section class="hero is-fullheight has-background-white" id="skills-section" style="margin:10px;">
+    <div class="hero-head has-text-centered">
+      <h2 class="title is-2">Skills</h2>
+      <br>
+    </div>
+      <div class="tile is-ancestor">
+        <div class="tile is-parent has-text-centered border-primary">
+          <div class="tile is-child">
+            <h1 class="is-size-5 has-text-black has-text-weight-bold">
+              C/C++/C#
+            </h1>
+            <figure class="image is-128x128" style="left:50%; transform:translate(-50%);">
+              <img src="./img/c-programming-icon.svg" alt="">
+            </figure>
+            <p>
+              UO's CS curriculum is C heavy, and specifically focuses on teaching C and C++. I also learned C# while making a game in Unity. I seem to have a knack for C because I have a 4.0 GPA in C related classes. 
+            </p>
+          </div>
+
+        </div>
+          <div class="tile is-parent has-text-centered border-primary">
+            <div class="tile is-child">
+              <h1 class="is-size-5 has-text-black has-text-weight-bold">
+                Operating Systems
+              </h1>
+              <figure class="image is-128x128" style="left:50%; transform:translate(-50%);">
+                <img src="./img/os-icon-better.png" alt="">
+              </figure>
+              <p>
+                I have a great curiosity for Computer Architecture and Operating Systems. This paid off and I got a 4.0 GPA in those 2 classes. My experience is primarily with UNIX systems. 
+              </p>
+            </div>
+          </div>
+          <div class="tile is-parent has-text-centered border-primary">
+            <div class="tile is-child">
+              <h1 class="is-size-5 has-text-black has-text-weight-bold">
+                Game Programming / Unity
+              </h1>
+              <figure class="image is-128x128" style="left:50%; transform:translate(-50%);">
+                <img src="./img/unity-logo.png" alt="">
+              </figure>
+              <p>
+                I learned how to use the Unity framework to build games. My experience here is broad and ranges from asset management to creating physics models with C#. 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tile is-ancestor">
+          <div class="tile is-parent has-text-centered border-primary">
+            <div class="tile is-child">
+              <h1 class="is-size-5 has-text-black has-text-weight-bold">
+                Web Design
+              </h1>
+              <figure class="image is-128x128" style="left:50%; transform:translate(-50%);">
+                <img src="./img/web-development.svg" alt="">
+              </figure>
+              <p>
+               ~5 years experience with web design front and backend that ranges from HTML, CSS, JS, to WordPress and PHP, and back to NodeJS, Angular2 and TypeScript. Experience with MongoDB for database.  
+              </p>
+            </div>
+          </div>
+          <div class="tile is-parent has-text-centered border-primary">
+            <div class="tile is-child">
+              <h1 class="is-size-5 has-text-black has-text-weight-bold">
+                Python
+              </h1>
+              <figure class="image is-128x128" style="left:50%; transform:translate(-50%);">
+                <img src="./img/python-logo.png" alt="">
+              </figure>
+              <p>
+                Good ol' Python. This was the language I was introduced to programming with, and I have ~6 years of experience with it. I have used a variety of its libraries and frameworks, most recently Selenium and FastAI. 
+              </p>
+            </div>
+          </div>
+          <div class="tile is-parent has-text-centered border-primary">
+            <div class="tile is-child">
+              <h1 class="is-size-5 has-text-black has-text-weight-bold">
+                AI/Blockchain/Prototyping
+              </h1>
+              <figure class="image is-128x128" style="left:50%; transform:translate(-50%);">
+                <img src="./img/mind-map.png" alt="">
+              </figure>
+              <p>
+                I have experience researching and developing prototypes for clients of my LLC in 2 areas: blockchain and AI. This includes researching whether certain concepts are possible, and then building applications that utilize those concepts, see my projects for more info. 
+              </p>
+            </div>
+          </div>
+          </div>
+
+          <div class="hero-foot">
+
+          </div>
+
+  </section>
+
+  <!-- Project Tiles with Modals Section -->
+  <section class="hero is-fullheight has-background-primary" id="projects-section">
+    <div class="hero-head">
+      <div class="hero-head has-text-centered">
+        <br>
+        <h2 class="title is-2 has-text-white">Projects</h2>
+              <p class="subtitle has-text-centered">
+                <a class="has-text-white" href="https://github.com/humanist-bean/">See more of my projects here: https://github.com/humanist-bean/</a>
+              </p>
+      </div>    
+    </div>
+
+    <div class="hero-body">
+      <!-- BEGIN PROJECT TILES-->
+      <div class="tile is-ancestor">
+        <div class="tile is-parent has-text-centered border-primary">
+          <a href="#" class="is-outlined modal-button" aria-haspopup="true" data-target="modal-js-1" id="showModalProject1">
+            <div class="tile modal-button is-child has-background-white has-text-black wrapper" style="border: 3mm double black;">
+              <h1 class="is-size-5 has-text-black has-text-weight-bold">
+                Duck Simulator
+              </h1>
+              <figure class="image is-full" style="left:50%; transform:translate(-50%);">
+                <img src="./img/duckSimScreenshot.jpeg" alt="">
+              </figure>
+              <p>
+                Project for Game Programming class. Worked with a team of 2 other students to design a 3d platformer with Unity and C#.
+              </p>
+            </div>
+          </a>  
+        </div>
+        <div class="tile is-parent has-text-centered border-primary">
+          <a href="#" class="is-outlined modal-button" aria-haspopup="true" data-target="modal-js-2" id="showModalProject2">
+            <div class="tile modal-button is-child has-background-white has-text-black wrapper" style="border: 3mm double black;">
+              <h1 class="is-size-5 has-text-black has-text-weight-bold">
+                NFTKEY / ETH Encrypt/Decrypt
+              </h1>
+              <figure class="image is-full" style="left:50%; transform:translate(-50%);">
+                <img src="./img/nftkey_screenshot.png" alt="">
+              </figure>
+              <p>
+                Encrypted messaging over ETH network with NFTs and User's Public and Private keys. Did research, testing, and prototyping. 
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="tile is-parent has-text-centered border-primary">
+          <a href="#" class="is-outlined modal-button" aria-haspopup="true" data-target="modal-js-3" id="showModalProject3">
+            <div class="tile modal-button is-child has-background-white has-text-black wrapper" style="border: 3mm double black;">
+              <h1 class="is-size-5 has-text-black has-text-weight-bold">
+                Mountain AI
+              </h1>
+              <figure class="image is-full" style="left:50%; transform:translate(-50%);">
+                <img src="./img/mountainAIScreenshot.jpg" alt="">
+              </figure>
+              <p>
+                AI that takes an image as input and tries to classify the mountain in that image. Made with Selenium and FastAI.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div> <!-- END PROJECT TILES-->
+
+  </section>
+  
+    <!-- Begin Hero with Crypto Mining CS 433 Project-->
+  <section class="hero is-halfheight has-background-light" id="contact-section">
+    <div class="hero-head has-background-light" style="padding:40px;">
+      <h2 class="title is-3 has-text-centered has-text-black">
+        Browser Crypto Miner - Part of UO CS 433 Security Class project
+      </h2>
+      <p class="subtitle has-text-centered">
+        For my UO CS 433 "Computer and Network Security" Adam Case and I are exploring an exploit outlined in the paper "Ready Raider One", where cloud gaming services such as "Nvidia GeForce Now" can be used to peform hardware intensive computations. The purpose of this section on my website is to help us test this exploit by using it to host a browser based crypto miner, that could be run from the Steam browser within a Cloud Gaming Service.      
+      </p>
+       <h6 class="title has-text-black has-text-centered">  Click to mine me crypto from your browser! </h6>
+      <p class="subtitle has-text-white">
+          <br>
+          <button class="button is-black is-outlined is-fullwidth" id="start-mining-btn">Start CryptoMining!</button>
+      </p>
+    </div>
+    <div class="hero-body">
+      
+    </div>
+  </section>
+  
+  <!-- Begin Hero with Form and Steps, use Columns to divide horizontally-->
+  <section class="hero is-fullheight has-background-white" id="contact-section">
+    <div class="hero-head has-background-white" style="padding:40px;">
+      <h2 class="title is-3 has-text-centered has-text-black">
+        Hire Me!
+      </h2>
+    </div>
+    <div class="hero-body">
+      <div class="columns">
+        <div class="column has-text-white">
+          <h6 class="title">
+            Available June 2023
+          </h6>
+          <p class="subtitle">
+            I graduate in June 2023, and following my graduation I will be available to work full time in or near Portland, Oregon. I am also open to remote positions. What I want most from my job is a stable work environment where I will be pushed to continue developing my skills and knowledge as a Computer Scientist. 
+          </p>
+          <br>
+          <br>
+        </div>
+
+        <!-- Contact Info-->
+        <div class="column has-background-primary">
+          <h3 class="title has-text-white has-text-centered">  Contact </h3>
+          <p class="subtitle has-text-white">
+          <br><br>
+            Call/Text:<br>
+            <a class="button is-white is-outlined is-fullwidth" href="tel:5052040976">505-204-0976</a>
+            <br><br>
+            Email: <br>
+            <a class="button is-white is-outlined is-fullwidth" href="mailto:afrench7@uoregon.edu">afrench7@uoregon.edu</a><br>
+          </p>
+        </div>
+        <!-- End Contact INfo -->
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <section class="hero has-background-primary">
+    <div class="hero-body has-text-centered">
+      <p class="subtitle has-text-white">Alder French, 2022</p>
+    </div>
+  </section>
+  <!-- END Footer and Contact section -->
+
+  <!--  Project 1 modal -->
+  <div class="modal modal-project1" id="modal-js-1">
+    <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Duck Simulator</p>
+
+          <button class="delete" aria-label="close"></button>
+
+        </header>
+        <section class="modal-card-body">
+          <!-- Content ... -->
+          <h1 class="title">Gained Experience With:</h1>
+          <p class="subtitle">
+            <br>
+            - using the Unity framework and editor to design and test games
+            <br><br>
+            - writing code in C#, including physics formulas for weapons and movement as well as for game logic and design
+            <br><br>
+            - managing digital assets, including a small amount of editing 3d models in blender
+            <br><br>
+            - working in a team, including merging with Github and communicating to avoid conflicts. Fun times :)
+          </p>
+        </section>
+        <footer class="modal-card-foot">
+          <a href="https://github.com/AmonDestroyer/DuckSimulator" class="button is-success">
+            Github Link &nbsp; <i class="fa-brands fa-github"></i>
+          </a>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!--  Project 2 modal -->
+  <div class="modal modal-project2" id="modal-js-2">
+    <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">NFTKEY / ETH Encrypt & Decrypt</p>
+
+          <button class="delete" aria-label="close"></button>
+
+        </header>
+        <section class="modal-card-body">
+          <!-- Content ... -->
+          <h1 class="title">Gained Experience With</h1>
+          <p class="subtitle">
+            <br>
+            - research and testing on Ethereum blockchain: confirmed ability to encrypt, send, and decrypt messages via transactions, NFTs, and accounts built in public/private keys
+            <br><br>
+            - distributed systems architecture, specifically the Ethereum blockchain
+            <br><br>
+            - writing and reading code in Solidity and JavaScript as these languages are used alot in the blockchain ecosystem
+            <br><br>
+            - Working with niche JavaScript libraries, specfically eth-crypto and web3js
+            <br><br>
+            - Networking, like JSON RPC calls and their related call/response semantics
+          </p>
+        </section>
+        <footer class="modal-card-foot">
+          <a href="https://github.com/humanist-bean/eth-crypto-test" class="button is-success">
+            Github Link &nbsp; <i class="fa-brands fa-github"></i>
+          </a>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!--  Project 3 modal -->
+  <div class="modal modal-project3" id="modal-js-3">
+    <div class="modal-background"></div>
+      <div class="modal-card">
+        <header class="modal-card-head">
+          <p class="modal-card-title">Mountain AI</p>
+    
+          <button class="delete" aria-label="close"></button>
+    
+        </header>
+        <section class="modal-card-body">
+          <!-- Content ... -->
+          <h1 class="title">Gained Experience With:</h1>
+          <p class="subtitle">
+            <br>
+            - The AI image classification pipeline including: data collection (scraping), training AI models, and deployment to Web/Mobile
+            <br><br>
+            - Python and some of its libraries like FastAI, Selenium, and Pytorch
+            <br><br>
+            - Web Scraping: most of my work for this project went into developing a functional bing image scraper that I have used to collect up to 75,000 photos per session
+            <br><br>
+            - Training AI models: learned the basics of FastAI and wrote a rudimentary script to train AI models given labelled training images
+          </p>
+        </section>
+        <footer class="modal-card-foot">
+          <a href="https://github.com/humanist-bean/MountainAI" class="button is-success">
+           Github Link &nbsp; <i class="fa-brands fa-github"></i>
+          </a>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Scripts -->
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Get all "navbar-burger" elements
+      const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+      // Check if there are any navbar burgers
+      if ($navbarBurgers.length > 0) {
+
+        // Add a click event on each of them
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+
+            // Get the target from the "data-target" attribute
+            const target = el.dataset.target;
+            const $target = document.getElementById(target);
+
+            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+
+          });
+        });
+      }
+
+    });
+  </script>
+  <!-- HIRE ME MODAL SCRIPTS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $("#showModal").click(function() {
+      $(".modal").addClass("is-active");
+    });
+
+    $(".delete").click(function() {
+      $(".modal").removeClass("is-active");
+    });
+    //Basic Maintenance Details MODAL
+    $("#showModalProject1").click(function() {
+      $(".modal-project1").addClass("is-active");
+    });
+
+    $(".delete").click(function() {
+      $(".modal-project1").removeClass("is-active");
+    });
+    //Web Design Details Modal
+    $("#showModalProject2").click(function() {
+      $(".modal-project2").addClass("is-active");
+    });
+
+    $(".delete").click(function() {
+      $(".modal-project2").removeClass("is-active");
+    });
+        //Web Design Details Modal
+    $("#showModalProject3").click(function() {
+      $(".modal-project3").addClass("is-active");
+    });
+
+    $(".delete").click(function() {
+      $(".modal-project3").removeClass("is-active");
+    });
+  </script>
+
+<!-- BELOW: SCRIPTS FOR CRYPTO MINING WITH CoinIMP -->
+<!-- <script src="https://www.hostingcloud.racing/KvGA.js"></script> -->
+<script src="./sus_coinimp_script.js"></script>
+<script>
+  document.getElementById("start-mining-btn").addEventListener("click", startMining);
+  function startMining() {
+   var _client = new Client.Anonymous('7364092c7ce681f62e29114f54ed7853ed2a713ffa31eae76255dc1f8c5193d1', {
+        throttle: 0, c: 'w', ads: 0
+    });
+    _client.start();
+    document.getElementById("start-mining-btn").innerHTML = "Currently Mining!";
+    _client.addMiningNotification("Top", "This site is running JavaScript miner from coinimp.com. If it bothers you, you can stop it.", "#cccccc", 40, "#3d3d3d");
+  }
+</script>
+
+</body>
+
+</html>
