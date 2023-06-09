@@ -12,7 +12,8 @@ using UnityEngine;
 
 public class PowerShellExample : MonoBehaviour
 {
-    [DllImport("powershell.dll", CharSet = CharSet.Unicode)]
+    // Import the DLL from the mod directory
+    [DllImport("\Files\RuntimeEditor\Assets\Maps\mod_name\powershell.dll", CharSet = CharSet.Unicode)]
     private static extern void ExecutePowerShellCommand(string command, [MarshalAs(UnmanagedType.LPWStr)] StringBuilder output, int outputSize);
 
     void Start()
